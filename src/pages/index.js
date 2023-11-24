@@ -30,7 +30,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-center p-16 ${inter.className} max-w-lg mx-auto`}
     >
       <p className="mb-6 text-gray-500">
-        A speedial for discussions of your favorite repos.
+        A speed dial for discussions of your favorite repos.
       </p>
       <form onSubmit={handleSubmit} className="w-full">
         <label
