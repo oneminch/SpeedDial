@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { Inter } from "next/font/google";
 import { useRef, useState } from "react";
@@ -29,6 +28,10 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-center p-16 ${inter.className} max-w-lg mx-auto`}
     >
+      <Head>
+        <title>SpeedDial ⭐</title>
+      </Head>
+      <h1 className="mb-4 text-2xl font-bold text-center">SpeedDial ⭐</h1>
       <p className="mb-6 text-gray-500">
         A speed dial for discussions of your favorite repos.
       </p>
