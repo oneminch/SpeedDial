@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Card from "@/components/Card";
 import { useRouter } from "next/router";
 
@@ -50,6 +51,9 @@ export default function Username({ username, repos, redirect }) {
 
   return (
     <main className="flex flex-col min-h-screen p-16">
+      <Head>
+        <title>@{username}'s Starred Discussions ⭐</title>
+      </Head>
       <h1 className="mb-10 text-2xl font-bold text-center text-gray-100">
         <a
           href={`https://github.com/${username}`}
